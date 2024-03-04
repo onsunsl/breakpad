@@ -1,0 +1,31 @@
+project(libdisasm)
+
+add_library(libdisasm
+            ${srcDir}/third_party/libdisasm/ia32_implicit.c
+            ${srcDir}/third_party/libdisasm/ia32_implicit.h
+            ${srcDir}/third_party/libdisasm/ia32_insn.c
+            ${srcDir}/third_party/libdisasm/ia32_insn.h
+            ${srcDir}/third_party/libdisasm/ia32_invariant.c
+            ${srcDir}/third_party/libdisasm/ia32_invariant.h
+            ${srcDir}/third_party/libdisasm/ia32_modrm.c
+            ${srcDir}/third_party/libdisasm/ia32_modrm.h
+            ${srcDir}/third_party/libdisasm/ia32_opcode_tables.c
+            ${srcDir}/third_party/libdisasm/ia32_opcode_tables.h
+            ${srcDir}/third_party/libdisasm/ia32_operand.c
+            ${srcDir}/third_party/libdisasm/ia32_operand.h
+            ${srcDir}/third_party/libdisasm/ia32_reg.c
+            ${srcDir}/third_party/libdisasm/ia32_reg.h
+            ${srcDir}/third_party/libdisasm/ia32_settings.c
+            ${srcDir}/third_party/libdisasm/ia32_settings.h
+            ${srcDir}/third_party/libdisasm/libdis.h
+            ${srcDir}/third_party/libdisasm/qword.h
+            ${srcDir}/third_party/libdisasm/x86_disasm.c
+            ${srcDir}/third_party/libdisasm/x86_format.c
+            ${srcDir}/third_party/libdisasm/x86_imm.c
+            ${srcDir}/third_party/libdisasm/x86_imm.h
+            ${srcDir}/third_party/libdisasm/x86_insn.c
+            ${srcDir}/third_party/libdisasm/x86_misc.c
+            ${srcDir}/third_party/libdisasm/x86_operand_list.c
+            ${srcDir}/third_party/libdisasm/x86_operand_list.h
+)
+

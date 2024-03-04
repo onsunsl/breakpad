@@ -1,0 +1,5 @@
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+    add_subdirectory(minidump_stackwalk)
+    add_subdirectory(microdump_stackwalk)
+    add_subdirectory(minidump_dump)
+endif ()
